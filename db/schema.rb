@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_12_05_154240) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "posts", force: :cascade do |t|
     t.string "username", default: "hopsoft", null: false
     t.string "body", null: false
